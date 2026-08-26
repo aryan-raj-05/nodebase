@@ -12,6 +12,10 @@ export const auth = betterAuth({
     enabled: true,
     autoSignIn: true,
   },
+  trustedOrigins: [
+    "http://localhost:3000",
+    "https://chylaceous-unprivileged-kaylene.ngrok-free.dev",
+  ],
   socialProviders: {
     github: {
       clientId: process.env.GITHUB_CLIENT_ID as string,
@@ -30,7 +34,7 @@ export const auth = betterAuth({
         checkout({
           products: [
             {
-              productId: "f81be8a8-45e1-4e45-a1e9-b9d3fd79f814",
+              productId: "2a453efa-e518-426a-ab9b-542b6de25bf4",
               slug: "pro",
             }
           ],
